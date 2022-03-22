@@ -5,7 +5,7 @@ You can currently search either by sign to get command, or keyword to get sign o
 
 #### IMPORTANT
 To use this script, you have to make sure that your terminal supports unicode. Windows Command Prompt (CMD) does not,
-so I would reccomend using either Windows Terminal or Powershell on Windows. If using Linux, - you'll figure it out.
+so I would recommend using either Windows Terminal or Powershell on Windows. If using Linux, - you'll figure it out.
 
 ## Installation
 
