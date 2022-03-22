@@ -13,7 +13,7 @@ if platform.system().lower() == "linux":
     path = os.path.join(path, ".bash_aliases")
     try:
         with open(path, 'a') as file:
-            file.write("alias lsym='python3 {}'".format(script_path))
+            file.write("\nalias lsym='python3 {}'".format(script_path))
     except Exception as e:
         print("LSYM INSTALLATION ERROR:", e)
 
