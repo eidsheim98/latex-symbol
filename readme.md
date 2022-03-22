@@ -9,23 +9,9 @@ so I would reccomend using either Windows Terminal or Powershell on Windows. If 
 
 ## Installation
 
-### Windows
+### Linux
 
-Start by cloning this repository into a desired folder. To run the program from anywhere in the terminal, 
-I would recommend creating a specific folder i an easy-to-remember location you would not need administrative
-rights to edit. This could for instance be in a folder called
-
-```bash
-C:/Users/{username}/.cmd
-```
-
-Go into this directory using the command
-
-```bash
-cd C:/Users/{username}/.cmd
-```
-
-Then run the command for cloning the repository
+Clone the repository into desired folder
 
 ```bash
 git clone https://github.com/eidsheim98/HTTPStatusCode.git
@@ -52,10 +38,9 @@ python setup.py
 
 If no errors are encountered, you are good to go!
 
-### Linux
+### Windows
 
-Linux support is currently in development
-
+Windows installation instructions are on the way
 
 ## Usage
 

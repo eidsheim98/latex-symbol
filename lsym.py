@@ -1,11 +1,11 @@
 import sys
-
+from os import path
 
 try:
     v = sys.argv[1]
 
 except IndexError:
-    print("Error: No searchterm provided. Try running \"sign {searchterm}\"")
+    print("lsym: No searchterm provided. Try running \"sign {searchterm}\"")
     quit()
 
 def get_input():
@@ -21,9 +21,11 @@ def get_input():
         print("0 more results found")
         quit()
 
-#v = input("Input symbol name or tag to search for: ")
+file_path = path.abspath(__file__) # full path of your script
+dir_path = path.dirname(file_path) # full path of the directory of your script
+symbols_path = path.join(dir_path,'unimathsymbols.txt')
 
-with open("unimathsymbols.txt", "r", encoding='utf-8') as file:
+with open(symbols_path, "r", encoding='utf-8') as file:
     lines = file.readlines()
 
 line_count = len(lines)
