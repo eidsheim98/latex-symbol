@@ -20,4 +20,4 @@ if platform.system().lower() == "linux":
 elif platform.system().lower() == "windows":
     print("Sorry, windows installation is underway")
 
-print("Done!")
+print("Done! You may have to restart the terminal")
