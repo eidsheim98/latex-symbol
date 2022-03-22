@@ -5,7 +5,7 @@ try:
     v = sys.argv[1]
 
 except IndexError:
-    print("lsym: No searchterm provided. Try running \"sign {searchterm}\"")
+    print("lsym: No searchterm provided. Try running \"lsym {searchterm}\"")
     quit()
 
 def get_input():
