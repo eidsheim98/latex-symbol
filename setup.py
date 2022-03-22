@@ -18,6 +18,8 @@ if platform.system().lower() == "linux":
         print("LSYM INSTALLATION ERROR:", e)
 
 elif platform.system().lower() == "windows":
-    print("Sorry, windows installation is underway")
+    with open("../lsym.bat", 'w+') as file:
+        file.write("@ECHO off\nset arg1=%1\npython " + script_path + " %arg1%")
 
 print("Done! You may have to restart the terminal")
+print("To use lsym, type: lsym searchterm")

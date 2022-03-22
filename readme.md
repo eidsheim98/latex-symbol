@@ -14,20 +14,56 @@ so I would reccomend using either Windows Terminal or Powershell on Windows. If 
 Clone the repository into desired folder
 
 ```bash
-git clone https://github.com/eidsheim98/HTTPStatusCode.git
+git clone https://github.com/eidsheim98/latex-symbol.git
 ```
 
-Next, add this folder to path, to be able to run the file from anywhere on the computer. 
+After this, change directory into latex-symbol folder
+
+```bash
+cd latex-symbol
+```
+
+The last step is to run the setup.py file
+
+```bash
+python3 setup.py
+```
+
+If no errors are encountered, you are good to go!
+
+### Windows
+
+Start by cloning this repository into a desired folder. To run the program from anywhere in the terminal,
+I would recommend creating a specific folder i an easy-to-remember location you would not need administrative
+rights to edit. This could for instance be in a folder called
+
+```bash
+C:/Users/{username}/.cmd
+```
+
+Go into this directory using the command
+
+```bash
+cd C:/Users/{username}/.cmd
+```
+
+Then run the command for cloning the repository
+
+```bash
+git clone https://github.com/eidsheim98/latex-symbol.git
+```
+
+Next, add this folder to path, to be able to run the file from anywhere on the computer.
 This line has to be run as administrator
 
 ```bash
 set PATH=%PATH%;C:/Users/{username}/.cmd
 ```
 
-After this, change directory into HTTPStatusCode
+After this, change directory into latex-symbol
 
 ```bash
-cd HTTPStatusCode
+cd latex-symbol
 ```
 
 The last step is to run the setup.py file
@@ -38,10 +74,6 @@ python setup.py
 
 If no errors are encountered, you are good to go!
 
-### Windows
-
-Windows installation instructions are on the way
-
 ## Usage
 
 You run the script by typing 
@@ -50,7 +82,7 @@ You run the script by typing
 lsym {searchTerm}
 ```
 
-That means that if the code you got is 404, you should write
+That means if you want the lambda sign you type
 
 ```bash
 lsym lambda
@@ -70,5 +102,7 @@ Found 28 other matches, show? Y/N:
 
 You can the press either N or Y, depending on if you found the symbol you were looking for or not
 
+### Other usage
+You can also search using a symbol, or a keyword in the comment text. More search capabilities are underway.
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
